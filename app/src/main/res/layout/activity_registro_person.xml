@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registroPerson"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:background="@color/background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registro Persona"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginBottom="40dp"
+        android:visibility="visible"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/ETcedula"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese cedula"
+            android:textColorHint="#AA9F9F"
+            android:maxLength="10"
+            android:inputType="number"
+            android:backgroundTint="@color/colorCuatro"
+            ></EditText>
+
+        <TextView
+            android:id="@+id/errCedula"
+            style="@style/errors"></TextView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/ETnombres"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese Nombres"
+        android:textColorHint="#AA9F9F"
+        android:maxLength="500"
+        android:backgroundTint="@color/colorCuatro"
+        ></EditText>
+
+        <TextView
+            android:id="@+id/errNombres"
+            style="@style/errors">
+        </TextView>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:clickable="true"
+            android:focusable="false"
+            android:id="@+id/ETfecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese Fecha"
+            android:inputType="date"
+            android:textColorHint="#AA9F9F"
+            android:maxLines="1"
+            android:backgroundTint="@color/colorCuatro"
+            ></EditText>
+
+        <TextView
+            android:id="@+id/errFecha"
+            style="@style/errors">
+        </TextView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/ETciudad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese Ciudad"
+            android:maxLength="200"
+            android:textColorHint="#AA9F9F"
+            android:backgroundTint="@color/colorCuatro"
+            ></EditText>
+
+        <TextView
+            android:id="@+id/errCiudad"
+            style="@style/errors">
+        </TextView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rdTipo"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <RadioButton
+                android:buttonTint="@color/colorCinco"
+                android:id="@+id/rbHombre"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Hombre"
+                android:textColor="@color/black"
+                android:layout_marginEnd="20dp"
+                android:textStyle="bold"
+                android:checked="true"
+                ></RadioButton>
+
+            <RadioButton
+                android:buttonTint="@color/colorCuatro"
+                android:id="@+id/rbMujer"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Mujer"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                ></RadioButton>
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/ETcorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese Correo"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#AA9F9F"
+            android:backgroundTint="@color/colorCuatro"
+            ></EditText>
+
+        <TextView
+            android:id="@+id/errCorreo"
+            style="@style/errors">
+        </TextView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/ETtelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese Telefono"
+            android:inputType="number"
+            android:textColorHint="#AA9F9F"
+            android:backgroundTint="@color/colorCuatro"
+            ></EditText>
+
+        <TextView
+            android:id="@+id/errTelefono"
+            style="@style/errors">
+        </TextView>
+
+    </LinearLayout>
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="Guardar"
+            android:layout_gravity="end|bottom"
+            ></Button>
+
+        <Button
+            android:id="@+id/btnLimpiar"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="Limpiar"
+            android:layout_gravity="start|bottom"
+            ></Button>
+
+    </FrameLayout>
+
+
+</LinearLayout>
+

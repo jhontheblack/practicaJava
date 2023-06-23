@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".resultsRegistro"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resultados"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:layout_marginVertical="16dp"
+        android:layout_marginHorizontal="16dp"
+        ></TextView>
+
+
+    <TextView
+        style="@style/RefResultados"
+        android:text="Cedula">
+    </TextView>
+
+    <TextView
+        android:id="@+id/Rcedula"
+        style="@style/RefResultados"
+        android:text="1250808373"
+        android:textSize="20dp"
+        android:textColor="@color/colorCuatro"
+        ></TextView>
+
+    <TextView
+        style="@style/RefResultados"
+        android:text="Nombre">
+    </TextView>
+
+    <TextView
+        android:id="@+id/Rnombre"
+        style="@style/RefResultados"
+        android:text="JHON"
+        android:textSize="20dp"
+        android:textColor="@color/colorCuatro"
+        ></TextView>
+
+    <TextView
+        style="@style/RefResultados"
+        android:text="Fecha">
+    </TextView>
+
+    <TextView
+        android:id="@+id/Rfecha"
+        style="@style/RefResultados"
+        android:text="23/05/2023"
+        android:textSize="20dp"
+        android:textColor="@color/colorCuatro"
+        ></TextView>
+
+    <TextView
+        style="@style/RefResultados"
+        android:text="Ciudad">
+    </TextView>
+
+    <TextView
+        android:id="@+id/Rciudad"
+        style="@style/RefResultados"
+        android:text="Quevedo"
+        android:textSize="20dp"
+        android:textColor="@color/colorCuatro"
+        ></TextView>
+
+    <TextView
+        style="@style/RefResultados"
+        android:text="Genero">
+    </TextView>
+
+    <TextView
+        android:id="@+id/Rgenero"
+        style="@style/RefResultados"
+        android:text="Hombre"
+        android:textSize="20dp"
+        android:textColor="@color/colorCuatro"
+        ></TextView>
+
+    <TextView
+        style="@style/RefResultados"
+        android:text="Correo">
+    </TextView>
+
+    <TextView
+        android:id="@+id/Rcoreo"
+        style="@style/RefResultados"
+        android:text="jhonleturne19@hotmail.com"
+        android:textSize="20dp"
+        android:textColor="@color/colorCuatro"
+        ></TextView>
+
+    <TextView
+        style="@style/RefResultados"
+        android:text="Telefono">
+    </TextView>
+
+    <TextView
+        android:id="@+id/Rtelefono"
+        style="@style/RefResultados"
+        android:text="0988710070"
+        android:textSize="20dp"
+        android:textColor="@color/colorCuatro"
+        ></TextView>
+
+</LinearLayout>
